@@ -1,0 +1,708 @@
+2020-07-02 17:09:26.346  INFO 4352 --- [restartedMain] com.lrm.BlogApplication                  : Starting BlogApplication on suruomo with PID 4352 (D:\Java\Project\blog\target\classes started by 苏若墨 in D:\Java\Project\blog)
+2020-07-02 17:09:26.353 DEBUG 4352 --- [restartedMain] com.lrm.BlogApplication                  : Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+2020-07-02 17:09:26.353  INFO 4352 --- [restartedMain] com.lrm.BlogApplication                  : The following profiles are active: dev
+2020-07-02 17:09:26.760  INFO 4352 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@46d22249: startup date [Thu Jul 02 17:09:26 CST 2020]; root of context hierarchy
+2020-07-02 17:09:29.357  INFO 4352 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2020-07-02 17:09:29.365  INFO 4352 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-02 17:09:29.366  INFO 4352 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2020-07-02 17:09:29.510  INFO 4352 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-02 17:09:29.511  INFO 4352 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2751 ms
+2020-07-02 17:09:29.692  INFO 4352 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2020-07-02 17:09:29.695  INFO 4352 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-07-02 17:09:29.696  INFO 4352 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-07-02 17:09:29.696  INFO 4352 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-07-02 17:09:29.696  INFO 4352 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2020-07-02 17:09:30.900  INFO 4352 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-07-02 17:09:30.909  INFO 4352 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-07-02 17:09:31.066  INFO 4352 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2020-07-02 17:09:31.068  INFO 4352 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-07-02 17:09:31.069  INFO 4352 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2020-07-02 17:09:31.138  INFO 4352 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2020-07-02 17:09:31.288  INFO 4352 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-07-02 17:09:31.669  INFO 4352 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2020-07-02 17:09:31.728  INFO 4352 --- [restartedMain] rmationExtractorJdbcDatabaseMetaDataImpl : HHH000262: Table not found: t_blog
+2020-07-02 17:09:31.729  INFO 4352 --- [restartedMain] rmationExtractorJdbcDatabaseMetaDataImpl : HHH000262: Table not found: t_blog
+2020-07-02 17:09:33.143  INFO 4352 --- [restartedMain] rmationExtractorJdbcDatabaseMetaDataImpl : HHH000262: Table not found: t_blog_tags
+2020-07-02 17:09:33.145  INFO 4352 --- [restartedMain] rmationExtractorJdbcDatabaseMetaDataImpl : HHH000262: Table not found: t_blog_tags
+2020-07-02 17:09:33.640  INFO 4352 --- [restartedMain] rmationExtractorJdbcDatabaseMetaDataImpl : HHH000262: Table not found: t_comment
+2020-07-02 17:09:33.641  INFO 4352 --- [restartedMain] rmationExtractorJdbcDatabaseMetaDataImpl : HHH000262: Table not found: t_comment
+2020-07-02 17:09:34.103  INFO 4352 --- [restartedMain] rmationExtractorJdbcDatabaseMetaDataImpl : HHH000262: Table not found: t_tag
+2020-07-02 17:09:34.104  INFO 4352 --- [restartedMain] rmationExtractorJdbcDatabaseMetaDataImpl : HHH000262: Table not found: t_tag
+2020-07-02 17:09:34.540  INFO 4352 --- [restartedMain] rmationExtractorJdbcDatabaseMetaDataImpl : HHH000262: Table not found: t_type
+2020-07-02 17:09:34.541  INFO 4352 --- [restartedMain] rmationExtractorJdbcDatabaseMetaDataImpl : HHH000262: Table not found: t_type
+2020-07-02 17:09:34.961  INFO 4352 --- [restartedMain] rmationExtractorJdbcDatabaseMetaDataImpl : HHH000262: Table not found: t_user
+2020-07-02 17:09:34.962  INFO 4352 --- [restartedMain] rmationExtractorJdbcDatabaseMetaDataImpl : HHH000262: Table not found: t_user
+2020-07-02 17:09:40.108  INFO 4352 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-07-02 17:09:40.463  INFO 4352 --- [restartedMain] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2020-07-02 17:09:41.160  INFO 4352 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@46d22249: startup date [Thu Jul 02 17:09:26 CST 2020]; root of context hierarchy
+2020-07-02 17:09:41.229  INFO 4352 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/about],methods=[GET]}" onto public java.lang.String com.lrm.web.AboutShowController.about()
+2020-07-02 17:09:41.234  INFO 4352 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs/{id}/delete],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.BlogController.delete(java.lang.Long,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2020-07-02 17:09:41.234  INFO 4352 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs/search],methods=[POST]}" onto public java.lang.String com.lrm.web.admin.BlogController.search(org.springframework.data.domain.Pageable,com.lrm.vo.BlogQuery,org.springframework.ui.Model)
+2020-07-02 17:09:41.235  INFO 4352 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs/input],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.BlogController.input(org.springframework.ui.Model)
+2020-07-02 17:09:41.235  INFO 4352 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs],methods=[POST]}" onto public java.lang.String com.lrm.web.admin.BlogController.post(com.lrm.po.Blog,org.springframework.web.servlet.mvc.support.RedirectAttributes,javax.servlet.http.HttpSession)
+2020-07-02 17:09:41.235  INFO 4352 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.BlogController.blogs(org.springframework.data.domain.Pageable,com.lrm.vo.BlogQuery,org.springframework.ui.Model)
+2020-07-02 17:09:41.236  INFO 4352 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs/{id}/input],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.BlogController.editInput(java.lang.Long,org.springframework.ui.Model)
+2020-07-02 17:09:41.237  INFO 4352 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/login],methods=[POST]}" onto public java.lang.String com.lrm.web.admin.LoginController.login(java.lang.String,java.lang.String,javax.servlet.http.HttpSession,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2020-07-02 17:09:41.237  INFO 4352 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.LoginController.loginPage()
+2020-07-02 17:09:41.238  INFO 4352 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/logout],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.LoginController.logout(javax.servlet.http.HttpSession)
+2020-07-02 17:09:41.239  INFO 4352 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tags/{id}/delete],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.TagController.delete(java.lang.Long,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2020-07-02 17:09:41.239  INFO 4352 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tags/input],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.TagController.input(org.springframework.ui.Model)
+2020-07-02 17:09:41.240  INFO 4352 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tags],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.TagController.tags(org.springframework.data.domain.Pageable,org.springframework.ui.Model)
+2020-07-02 17:09:41.240  INFO 4352 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tags],methods=[POST]}" onto public java.lang.String com.lrm.web.admin.TagController.post(com.lrm.po.Tag,org.springframework.validation.BindingResult,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2020-07-02 17:09:41.240  INFO 4352 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tags/{id}],methods=[POST]}" onto public java.lang.String com.lrm.web.admin.TagController.editPost(com.lrm.po.Tag,org.springframework.validation.BindingResult,java.lang.Long,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2020-07-02 17:09:41.240  INFO 4352 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tags/{id}/input],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.TagController.editInput(java.lang.Long,org.springframework.ui.Model)
+2020-07-02 17:09:41.242  INFO 4352 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types/{id}/delete],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.TypeController.delete(java.lang.Long,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2020-07-02 17:09:41.242  INFO 4352 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.TypeController.types(org.springframework.data.domain.Pageable,org.springframework.ui.Model)
+2020-07-02 17:09:41.242  INFO 4352 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types/input],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.TypeController.input(org.springframework.ui.Model)
+2020-07-02 17:09:41.243  INFO 4352 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types],methods=[POST]}" onto public java.lang.String com.lrm.web.admin.TypeController.post(com.lrm.po.Type,org.springframework.validation.BindingResult,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2020-07-02 17:09:41.243  INFO 4352 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types/{id}],methods=[POST]}" onto public java.lang.String com.lrm.web.admin.TypeController.editPost(com.lrm.po.Type,org.springframework.validation.BindingResult,java.lang.Long,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2020-07-02 17:09:41.243  INFO 4352 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types/{id}/input],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.TypeController.editInput(java.lang.Long,org.springframework.ui.Model)
+2020-07-02 17:09:41.246  INFO 4352 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/archives],methods=[GET]}" onto public java.lang.String com.lrm.web.ArchiveShowController.archives(org.springframework.ui.Model)
+2020-07-02 17:09:41.247  INFO 4352 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/comments/{blogId}],methods=[GET]}" onto public java.lang.String com.lrm.web.CommentController.comments(java.lang.Long,org.springframework.ui.Model)
+2020-07-02 17:09:41.247  INFO 4352 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/comments],methods=[POST]}" onto public java.lang.String com.lrm.web.CommentController.post(com.lrm.po.Comment,javax.servlet.http.HttpSession)
+2020-07-02 17:09:41.248  INFO 4352 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/],methods=[GET]}" onto public java.lang.String com.lrm.web.IndexController.index(org.springframework.data.domain.Pageable,org.springframework.ui.Model)
+2020-07-02 17:09:41.249  INFO 4352 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/search],methods=[POST]}" onto public java.lang.String com.lrm.web.IndexController.search(org.springframework.data.domain.Pageable,java.lang.String,org.springframework.ui.Model)
+2020-07-02 17:09:41.249  INFO 4352 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/footer/newblog],methods=[GET]}" onto public java.lang.String com.lrm.web.IndexController.newblogs(org.springframework.ui.Model)
+2020-07-02 17:09:41.249  INFO 4352 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/blog/{id}],methods=[GET]}" onto public java.lang.String com.lrm.web.IndexController.blog(java.lang.Long,org.springframework.ui.Model)
+2020-07-02 17:09:41.250  INFO 4352 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/tags/{id}],methods=[GET]}" onto public java.lang.String com.lrm.web.TagShowController.tags(org.springframework.data.domain.Pageable,java.lang.Long,org.springframework.ui.Model)
+2020-07-02 17:09:41.250  INFO 4352 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/types/{id}],methods=[GET]}" onto public java.lang.String com.lrm.web.TypeShowController.types(org.springframework.data.domain.Pageable,java.lang.Long,org.springframework.ui.Model)
+2020-07-02 17:09:41.252  INFO 4352 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-07-02 17:09:41.252  INFO 4352 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-07-02 17:09:41.311  INFO 4352 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-07-02 17:09:41.311  INFO 4352 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-07-02 17:09:41.337  INFO 4352 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in controllerExceptionHandler
+2020-07-02 17:09:41.367  INFO 4352 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-07-02 17:09:42.316  INFO 4352 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-02 17:09:42.356  INFO 4352 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2020-07-02 17:09:42.407 ERROR 4352 --- [restartedMain] o.a.coyote.http11.Http11NioProtocol      : Failed to start end point associated with ProtocolHandler ["http-nio-8080"]
+
+java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:990)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:635)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1022)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:250)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:193)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.lrm.BlogApplication.main(BlogApplication.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+
+2020-07-02 17:09:42.408 ERROR 4352 --- [restartedMain] o.apache.catalina.core.StandardService   : Failed to start connector [Connector[HTTP/1.1-8080]]
+
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-8080]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:250)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:193)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.lrm.BlogApplication.main(BlogApplication.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.apache.catalina.LifecycleException: service.getName(): "Tomcat";  Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1029)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 18 common frames omitted
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:990)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:635)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1022)
+	... 19 common frames omitted
+
+2020-07-02 17:09:42.414  INFO 4352 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-07-02 17:09:42.442  INFO 4352 --- [restartedMain] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2020-07-02 17:09:42.446 ERROR 4352 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8080 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8080, or configure this application to listen on another port.
+
+2020-07-02 17:09:42.447  INFO 4352 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@46d22249: startup date [Thu Jul 02 17:09:26 CST 2020]; root of context hierarchy
+2020-07-02 17:09:42.449  INFO 4352 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2020-07-02 17:09:42.450  INFO 4352 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-07-02 17:12:14.752  INFO 13296 --- [restartedMain] com.lrm.BlogApplication                  : Starting BlogApplication on suruomo with PID 13296 (D:\Java\Project\blog\target\classes started by 苏若墨 in D:\Java\Project\blog)
+2020-07-02 17:12:14.753 DEBUG 13296 --- [restartedMain] com.lrm.BlogApplication                  : Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+2020-07-02 17:12:14.754  INFO 13296 --- [restartedMain] com.lrm.BlogApplication                  : The following profiles are active: dev
+2020-07-02 17:12:15.017  INFO 13296 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@234dfccc: startup date [Thu Jul 02 17:12:15 CST 2020]; root of context hierarchy
+2020-07-02 17:12:16.977  INFO 13296 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8070 (http)
+2020-07-02 17:12:16.986  INFO 13296 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-02 17:12:16.986  INFO 13296 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2020-07-02 17:12:17.104  INFO 13296 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-02 17:12:17.105  INFO 13296 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2088 ms
+2020-07-02 17:12:17.278  INFO 13296 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2020-07-02 17:12:17.282  INFO 13296 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-07-02 17:12:17.282  INFO 13296 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-07-02 17:12:17.282  INFO 13296 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-07-02 17:12:17.283  INFO 13296 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2020-07-02 17:12:17.775  INFO 13296 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-07-02 17:12:17.787  INFO 13296 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-07-02 17:12:17.917  INFO 13296 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2020-07-02 17:12:17.918  INFO 13296 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-07-02 17:12:17.918  INFO 13296 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2020-07-02 17:12:17.947  INFO 13296 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2020-07-02 17:12:18.078  INFO 13296 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-07-02 17:12:18.437  INFO 13296 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2020-07-02 17:12:18.670  INFO 13296 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-07-02 17:12:18.916  INFO 13296 --- [restartedMain] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2020-07-02 17:12:19.621  INFO 13296 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@234dfccc: startup date [Thu Jul 02 17:12:15 CST 2020]; root of context hierarchy
+2020-07-02 17:12:19.680  INFO 13296 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/about],methods=[GET]}" onto public java.lang.String com.lrm.web.AboutShowController.about()
+2020-07-02 17:12:19.687  INFO 13296 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs/{id}/delete],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.BlogController.delete(java.lang.Long,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2020-07-02 17:12:19.687  INFO 13296 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs/search],methods=[POST]}" onto public java.lang.String com.lrm.web.admin.BlogController.search(org.springframework.data.domain.Pageable,com.lrm.vo.BlogQuery,org.springframework.ui.Model)
+2020-07-02 17:12:19.687  INFO 13296 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs/input],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.BlogController.input(org.springframework.ui.Model)
+2020-07-02 17:12:19.687  INFO 13296 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs],methods=[POST]}" onto public java.lang.String com.lrm.web.admin.BlogController.post(com.lrm.po.Blog,org.springframework.web.servlet.mvc.support.RedirectAttributes,javax.servlet.http.HttpSession)
+2020-07-02 17:12:19.688  INFO 13296 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.BlogController.blogs(org.springframework.data.domain.Pageable,com.lrm.vo.BlogQuery,org.springframework.ui.Model)
+2020-07-02 17:12:19.688  INFO 13296 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs/{id}/input],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.BlogController.editInput(java.lang.Long,org.springframework.ui.Model)
+2020-07-02 17:12:19.689  INFO 13296 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/login],methods=[POST]}" onto public java.lang.String com.lrm.web.admin.LoginController.login(java.lang.String,java.lang.String,javax.servlet.http.HttpSession,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2020-07-02 17:12:19.689  INFO 13296 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/logout],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.LoginController.logout(javax.servlet.http.HttpSession)
+2020-07-02 17:12:19.689  INFO 13296 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.LoginController.loginPage()
+2020-07-02 17:12:19.690  INFO 13296 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tags/{id}/delete],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.TagController.delete(java.lang.Long,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2020-07-02 17:12:19.691  INFO 13296 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tags/input],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.TagController.input(org.springframework.ui.Model)
+2020-07-02 17:12:19.691  INFO 13296 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tags],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.TagController.tags(org.springframework.data.domain.Pageable,org.springframework.ui.Model)
+2020-07-02 17:12:19.691  INFO 13296 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tags],methods=[POST]}" onto public java.lang.String com.lrm.web.admin.TagController.post(com.lrm.po.Tag,org.springframework.validation.BindingResult,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2020-07-02 17:12:19.691  INFO 13296 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tags/{id}],methods=[POST]}" onto public java.lang.String com.lrm.web.admin.TagController.editPost(com.lrm.po.Tag,org.springframework.validation.BindingResult,java.lang.Long,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2020-07-02 17:12:19.692  INFO 13296 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tags/{id}/input],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.TagController.editInput(java.lang.Long,org.springframework.ui.Model)
+2020-07-02 17:12:19.693  INFO 13296 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types/{id}/delete],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.TypeController.delete(java.lang.Long,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2020-07-02 17:12:19.693  INFO 13296 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.TypeController.types(org.springframework.data.domain.Pageable,org.springframework.ui.Model)
+2020-07-02 17:12:19.693  INFO 13296 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types/input],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.TypeController.input(org.springframework.ui.Model)
+2020-07-02 17:12:19.693  INFO 13296 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types],methods=[POST]}" onto public java.lang.String com.lrm.web.admin.TypeController.post(com.lrm.po.Type,org.springframework.validation.BindingResult,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2020-07-02 17:12:19.694  INFO 13296 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types/{id}],methods=[POST]}" onto public java.lang.String com.lrm.web.admin.TypeController.editPost(com.lrm.po.Type,org.springframework.validation.BindingResult,java.lang.Long,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2020-07-02 17:12:19.694  INFO 13296 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types/{id}/input],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.TypeController.editInput(java.lang.Long,org.springframework.ui.Model)
+2020-07-02 17:12:19.696  INFO 13296 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/archives],methods=[GET]}" onto public java.lang.String com.lrm.web.ArchiveShowController.archives(org.springframework.ui.Model)
+2020-07-02 17:12:19.696  INFO 13296 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/comments/{blogId}],methods=[GET]}" onto public java.lang.String com.lrm.web.CommentController.comments(java.lang.Long,org.springframework.ui.Model)
+2020-07-02 17:12:19.696  INFO 13296 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/comments],methods=[POST]}" onto public java.lang.String com.lrm.web.CommentController.post(com.lrm.po.Comment,javax.servlet.http.HttpSession)
+2020-07-02 17:12:19.697  INFO 13296 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/],methods=[GET]}" onto public java.lang.String com.lrm.web.IndexController.index(org.springframework.data.domain.Pageable,org.springframework.ui.Model)
+2020-07-02 17:12:19.697  INFO 13296 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/search],methods=[POST]}" onto public java.lang.String com.lrm.web.IndexController.search(org.springframework.data.domain.Pageable,java.lang.String,org.springframework.ui.Model)
+2020-07-02 17:12:19.697  INFO 13296 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/blog/{id}],methods=[GET]}" onto public java.lang.String com.lrm.web.IndexController.blog(java.lang.Long,org.springframework.ui.Model)
+2020-07-02 17:12:19.697  INFO 13296 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/footer/newblog],methods=[GET]}" onto public java.lang.String com.lrm.web.IndexController.newblogs(org.springframework.ui.Model)
+2020-07-02 17:12:19.698  INFO 13296 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/tags/{id}],methods=[GET]}" onto public java.lang.String com.lrm.web.TagShowController.tags(org.springframework.data.domain.Pageable,java.lang.Long,org.springframework.ui.Model)
+2020-07-02 17:12:19.698  INFO 13296 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/types/{id}],methods=[GET]}" onto public java.lang.String com.lrm.web.TypeShowController.types(org.springframework.data.domain.Pageable,java.lang.Long,org.springframework.ui.Model)
+2020-07-02 17:12:19.699  INFO 13296 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-07-02 17:12:19.700  INFO 13296 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-07-02 17:12:19.739  INFO 13296 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-07-02 17:12:19.739  INFO 13296 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-07-02 17:12:19.756  INFO 13296 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in controllerExceptionHandler
+2020-07-02 17:12:19.774  INFO 13296 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-07-02 17:12:20.413  INFO 13296 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-02 17:12:20.456  INFO 13296 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2020-07-02 17:12:20.502  INFO 13296 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8070 (http)
+2020-07-02 17:12:20.506  INFO 13296 --- [restartedMain] com.lrm.BlogApplication                  : Started BlogApplication in 6.211 seconds (JVM running for 8.298)
+2020-07-02 18:17:26.661  INFO 13296 --- [http-nio-8070-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-07-02 18:17:26.662  INFO 13296 --- [http-nio-8070-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2020-07-02 18:17:26.776  INFO 13296 --- [http-nio-8070-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 113 ms
+2020-07-02 18:17:27.027  INFO 13296 --- [http-nio-8070-exec-3] com.lrm.aspect.LogAspect                 : Request : {url='http://127.0.0.1:8070/', ip='127.0.0.1', classMethod='com.lrm.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-07-02 18:17:28.260  WARN 13296 --- [http-nio-8070-exec-3] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [null.size]; use collection function syntax instead [size(null)].
+2020-07-02 18:17:28.363  WARN 13296 --- [http-nio-8070-exec-3] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [null.size]; use collection function syntax instead [size(null)].
+2020-07-02 18:17:28.388  INFO 13296 --- [http-nio-8070-exec-3] com.lrm.aspect.LogAspect                 : Result : index
+2020-07-02 18:17:31.006  INFO 13296 --- [http-nio-8070-exec-6] com.lrm.aspect.LogAspect                 : Request : {url='http://127.0.0.1:8070/footer/newblog', ip='127.0.0.1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2020-07-02 18:17:31.010  INFO 13296 --- [http-nio-8070-exec-6] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2020-07-02 18:17:40.679  INFO 13296 --- [http-nio-8070-exec-10] com.lrm.aspect.LogAspect                 : Request : {url='http://127.0.0.1:8070/archives', ip='127.0.0.1', classMethod='com.lrm.web.ArchiveShowController.archives', args=[{}]}
+2020-07-02 18:17:40.824  INFO 13296 --- [http-nio-8070-exec-10] com.lrm.aspect.LogAspect                 : Result : archives
+2020-07-02 18:17:41.307  INFO 13296 --- [http-nio-8070-exec-8] com.lrm.aspect.LogAspect                 : Request : {url='http://127.0.0.1:8070/footer/newblog', ip='127.0.0.1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2020-07-02 18:17:41.309  INFO 13296 --- [http-nio-8070-exec-8] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2020-07-02 18:17:42.123  INFO 13296 --- [http-nio-8070-exec-5] com.lrm.aspect.LogAspect                 : Request : {url='http://127.0.0.1:8070/tags/-1', ip='127.0.0.1', classMethod='com.lrm.web.TagShowController.tags', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2020-07-02 18:17:42.179 ERROR 13296 --- [http-nio-8070-exec-5] c.l.handler.ControllerExceptionHandler   : Requst URL : http://127.0.0.1:8070/tags/-1，Exception : {}
+
+java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(ArrayList.java:653)
+	at java.util.ArrayList.get(ArrayList.java:429)
+	at com.lrm.web.TagShowController.tags(TagShowController.java:35)
+	at com.lrm.web.TagShowController$$FastClassBySpringCGLIB$$8d46ff45.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:738)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:52)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.aspectj.AspectJAfterAdvice.invoke(AspectJAfterAdvice.java:47)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:52)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:673)
+	at com.lrm.web.TagShowController$$EnhancerBySpringCGLIB$$3dd30957.tags(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1457)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2020-07-02 18:17:42.180  WARN 13296 --- [http-nio-8070-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved exception caused by Handler execution: java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+2020-07-02 18:17:44.005  INFO 13296 --- [http-nio-8070-exec-7] com.lrm.aspect.LogAspect                 : Request : {url='http://127.0.0.1:8070/types/-1', ip='127.0.0.1', classMethod='com.lrm.web.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2020-07-02 18:17:44.011 ERROR 13296 --- [http-nio-8070-exec-7] c.l.handler.ControllerExceptionHandler   : Requst URL : http://127.0.0.1:8070/types/-1，Exception : {}
+
+java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(ArrayList.java:653)
+	at java.util.ArrayList.get(ArrayList.java:429)
+	at com.lrm.web.TypeShowController.types(TypeShowController.java:35)
+	at com.lrm.web.TypeShowController$$FastClassBySpringCGLIB$$76a7bc01.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:738)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:52)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.aspectj.AspectJAfterAdvice.invoke(AspectJAfterAdvice.java:47)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:52)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:673)
+	at com.lrm.web.TypeShowController$$EnhancerBySpringCGLIB$$7483150b.types(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1457)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2020-07-02 18:17:44.012  WARN 13296 --- [http-nio-8070-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved exception caused by Handler execution: java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+2020-07-02 18:17:45.248  INFO 13296 --- [http-nio-8070-exec-6] com.lrm.aspect.LogAspect                 : Request : {url='http://127.0.0.1:8070/', ip='127.0.0.1', classMethod='com.lrm.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-07-02 18:17:45.261  INFO 13296 --- [http-nio-8070-exec-6] com.lrm.aspect.LogAspect                 : Result : index
+2020-07-02 18:17:45.777  INFO 13296 --- [http-nio-8070-exec-9] com.lrm.aspect.LogAspect                 : Request : {url='http://127.0.0.1:8070/footer/newblog', ip='127.0.0.1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2020-07-02 18:17:45.779  INFO 13296 --- [http-nio-8070-exec-9] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2020-07-02 18:38:12.512  INFO 13296 --- [http-nio-8070-exec-5] com.lrm.aspect.LogAspect                 : Request : {url='http://127.0.0.1:8070/', ip='127.0.0.1', classMethod='com.lrm.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-07-02 18:38:12.551  INFO 13296 --- [http-nio-8070-exec-5] com.lrm.aspect.LogAspect                 : Result : index
+2020-07-02 18:38:13.029  INFO 13296 --- [http-nio-8070-exec-4] com.lrm.aspect.LogAspect                 : Request : {url='http://127.0.0.1:8070/footer/newblog', ip='127.0.0.1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2020-07-02 18:38:13.030  INFO 13296 --- [http-nio-8070-exec-4] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2020-07-02 18:38:44.384  INFO 13296 --- [http-nio-8070-exec-1] com.lrm.aspect.LogAspect                 : Request : {url='http://127.0.0.1:8070/tags/1', ip='127.0.0.1', classMethod='com.lrm.web.TagShowController.tags', args=[Page request [number: 0, size 8, sort: updateTime: DESC], 1, {}]}
+2020-07-02 18:38:44.445  INFO 13296 --- [http-nio-8070-exec-1] com.lrm.aspect.LogAspect                 : Result : tags
+2020-07-02 18:38:44.869  INFO 13296 --- [http-nio-8070-exec-10] com.lrm.aspect.LogAspect                 : Request : {url='http://127.0.0.1:8070/footer/newblog', ip='127.0.0.1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2020-07-02 18:38:44.871  INFO 13296 --- [http-nio-8070-exec-10] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2020-07-02 18:42:20.170  INFO 13296 --- [http-nio-8070-exec-8] com.lrm.aspect.LogAspect                 : Request : {url='http://127.0.0.1:8070/', ip='127.0.0.1', classMethod='com.lrm.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-07-02 18:42:20.203  INFO 13296 --- [http-nio-8070-exec-8] com.lrm.aspect.LogAspect                 : Result : index
+2020-07-02 18:42:20.737  INFO 13296 --- [http-nio-8070-exec-9] com.lrm.aspect.LogAspect                 : Request : {url='http://127.0.0.1:8070/footer/newblog', ip='127.0.0.1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2020-07-02 18:42:20.739  INFO 13296 --- [http-nio-8070-exec-9] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2020-07-02 18:43:13.099  INFO 13296 --- [http-nio-8070-exec-4] com.lrm.aspect.LogAspect                 : Request : {url='http://127.0.0.1:8070/search', ip='127.0.0.1', classMethod='com.lrm.web.IndexController.search', args=[Page request [number: 0, size 8, sort: updateTime: DESC], java, {}]}
+2020-07-02 18:43:13.108  INFO 13296 --- [http-nio-8070-exec-4] com.lrm.aspect.LogAspect                 : Result : search
+2020-07-02 18:43:47.939  INFO 13296 --- [http-nio-8070-exec-3] com.lrm.aspect.LogAspect                 : Request : {url='http://127.0.0.1:8070/blog/3', ip='127.0.0.1', classMethod='com.lrm.web.IndexController.blog', args=[3, {}]}
+2020-07-02 18:43:48.197  INFO 13296 --- [http-nio-8070-exec-3] com.lrm.aspect.LogAspect                 : Result : blog
+2020-07-02 18:43:48.867  INFO 13296 --- [http-nio-8070-exec-2] com.lrm.aspect.LogAspect                 : Request : {url='http://127.0.0.1:8070/footer/newblog', ip='127.0.0.1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2020-07-02 18:43:48.878  INFO 13296 --- [http-nio-8070-exec-2] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2020-07-02 18:52:55.988  INFO 13296 --- [http-nio-8070-exec-9] com.lrm.aspect.LogAspect                 : Request : {url='http://127.0.0.1:8070/', ip='127.0.0.1', classMethod='com.lrm.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-07-02 18:52:55.997  INFO 13296 --- [http-nio-8070-exec-9] com.lrm.aspect.LogAspect                 : Result : index
+2020-07-02 18:52:56.441  INFO 13296 --- [http-nio-8070-exec-3] com.lrm.aspect.LogAspect                 : Request : {url='http://127.0.0.1:8070/footer/newblog', ip='127.0.0.1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2020-07-02 18:52:56.444  INFO 13296 --- [http-nio-8070-exec-3] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2020-07-02 18:53:25.532  INFO 13296 --- [http-nio-8070-exec-10] com.lrm.aspect.LogAspect                 : Request : {url='http://127.0.0.1:8070/', ip='127.0.0.1', classMethod='com.lrm.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-07-02 18:53:25.543  INFO 13296 --- [http-nio-8070-exec-10] com.lrm.aspect.LogAspect                 : Result : index
+2020-07-02 18:53:26.017  INFO 13296 --- [http-nio-8070-exec-4] com.lrm.aspect.LogAspect                 : Request : {url='http://127.0.0.1:8070/footer/newblog', ip='127.0.0.1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2020-07-02 18:53:26.019  INFO 13296 --- [http-nio-8070-exec-4] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2020-07-02 18:58:28.712  INFO 13296 --- [http-nio-8070-exec-7] com.lrm.aspect.LogAspect                 : Request : {url='http://127.0.0.1:8070/', ip='127.0.0.1', classMethod='com.lrm.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-07-02 18:58:28.723  INFO 13296 --- [http-nio-8070-exec-7] com.lrm.aspect.LogAspect                 : Result : index
+2020-07-02 18:58:29.202  INFO 13296 --- [http-nio-8070-exec-6] com.lrm.aspect.LogAspect                 : Request : {url='http://127.0.0.1:8070/footer/newblog', ip='127.0.0.1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2020-07-02 18:58:29.206  INFO 13296 --- [http-nio-8070-exec-6] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2020-07-02 18:58:32.654  INFO 13296 --- [http-nio-8070-exec-8] com.lrm.aspect.LogAspect                 : Request : {url='http://127.0.0.1:8070/blog/3', ip='127.0.0.1', classMethod='com.lrm.web.IndexController.blog', args=[3, {}]}
+2020-07-02 18:58:32.701  INFO 13296 --- [http-nio-8070-exec-8] com.lrm.aspect.LogAspect                 : Result : blog
+2020-07-02 18:58:33.103  INFO 13296 --- [http-nio-8070-exec-1] com.lrm.aspect.LogAspect                 : Request : {url='http://127.0.0.1:8070/footer/newblog', ip='127.0.0.1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2020-07-02 18:58:33.109  INFO 13296 --- [http-nio-8070-exec-1] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2020-07-02 19:00:58.098  INFO 20812 --- [restartedMain] com.lrm.BlogApplication                  : Starting BlogApplication on suruomo with PID 20812 (D:\Java\Project\blog\target\classes started by 苏若墨 in D:\Java\Project\blog)
+2020-07-02 19:00:58.099 DEBUG 20812 --- [restartedMain] com.lrm.BlogApplication                  : Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+2020-07-02 19:00:58.099  INFO 20812 --- [restartedMain] com.lrm.BlogApplication                  : The following profiles are active: dev
+2020-07-02 19:00:58.505  INFO 20812 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@69508ad9: startup date [Thu Jul 02 19:00:58 CST 2020]; root of context hierarchy
+2020-07-02 19:01:00.839  INFO 20812 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8070 (http)
+2020-07-02 19:01:00.847  INFO 20812 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-02 19:01:00.848  INFO 20812 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2020-07-02 19:01:00.979  INFO 20812 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-02 19:01:00.979  INFO 20812 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2474 ms
+2020-07-02 19:01:01.149  INFO 20812 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2020-07-02 19:01:01.154  INFO 20812 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-07-02 19:01:01.155  INFO 20812 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-07-02 19:01:01.155  INFO 20812 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-07-02 19:01:01.155  INFO 20812 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2020-07-02 19:01:02.015  INFO 20812 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-07-02 19:01:02.030  INFO 20812 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-07-02 19:01:02.209  INFO 20812 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2020-07-02 19:01:02.211  INFO 20812 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-07-02 19:01:02.213  INFO 20812 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2020-07-02 19:01:02.301  INFO 20812 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2020-07-02 19:01:02.458  INFO 20812 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-07-02 19:01:03.009  INFO 20812 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2020-07-02 19:01:03.315  INFO 20812 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-07-02 19:01:03.856  INFO 20812 --- [restartedMain] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2020-07-02 19:01:04.645  INFO 20812 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@69508ad9: startup date [Thu Jul 02 19:00:58 CST 2020]; root of context hierarchy
+2020-07-02 19:01:04.710  INFO 20812 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/about],methods=[GET]}" onto public java.lang.String com.lrm.web.AboutShowController.about()
+2020-07-02 19:01:04.716  INFO 20812 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs/{id}/delete],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.BlogController.delete(java.lang.Long,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2020-07-02 19:01:04.717  INFO 20812 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs/search],methods=[POST]}" onto public java.lang.String com.lrm.web.admin.BlogController.search(org.springframework.data.domain.Pageable,com.lrm.vo.BlogQuery,org.springframework.ui.Model)
+2020-07-02 19:01:04.717  INFO 20812 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs/input],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.BlogController.input(org.springframework.ui.Model)
+2020-07-02 19:01:04.717  INFO 20812 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs],methods=[POST]}" onto public java.lang.String com.lrm.web.admin.BlogController.post(com.lrm.po.Blog,org.springframework.web.servlet.mvc.support.RedirectAttributes,javax.servlet.http.HttpSession)
+2020-07-02 19:01:04.717  INFO 20812 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs/{id}/input],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.BlogController.editInput(java.lang.Long,org.springframework.ui.Model)
+2020-07-02 19:01:04.717  INFO 20812 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.BlogController.blogs(org.springframework.data.domain.Pageable,com.lrm.vo.BlogQuery,org.springframework.ui.Model)
+2020-07-02 19:01:04.718  INFO 20812 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/logout],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.LoginController.logout(javax.servlet.http.HttpSession)
+2020-07-02 19:01:04.719  INFO 20812 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/login],methods=[POST]}" onto public java.lang.String com.lrm.web.admin.LoginController.login(java.lang.String,java.lang.String,javax.servlet.http.HttpSession,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2020-07-02 19:01:04.719  INFO 20812 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.LoginController.loginPage()
+2020-07-02 19:01:04.720  INFO 20812 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tags/{id}/delete],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.TagController.delete(java.lang.Long,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2020-07-02 19:01:04.720  INFO 20812 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tags/input],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.TagController.input(org.springframework.ui.Model)
+2020-07-02 19:01:04.720  INFO 20812 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tags],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.TagController.tags(org.springframework.data.domain.Pageable,org.springframework.ui.Model)
+2020-07-02 19:01:04.721  INFO 20812 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tags],methods=[POST]}" onto public java.lang.String com.lrm.web.admin.TagController.post(com.lrm.po.Tag,org.springframework.validation.BindingResult,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2020-07-02 19:01:04.721  INFO 20812 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tags/{id}],methods=[POST]}" onto public java.lang.String com.lrm.web.admin.TagController.editPost(com.lrm.po.Tag,org.springframework.validation.BindingResult,java.lang.Long,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2020-07-02 19:01:04.721  INFO 20812 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tags/{id}/input],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.TagController.editInput(java.lang.Long,org.springframework.ui.Model)
+2020-07-02 19:01:04.722  INFO 20812 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types/{id}/delete],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.TypeController.delete(java.lang.Long,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2020-07-02 19:01:04.723  INFO 20812 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.TypeController.types(org.springframework.data.domain.Pageable,org.springframework.ui.Model)
+2020-07-02 19:01:04.723  INFO 20812 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types/input],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.TypeController.input(org.springframework.ui.Model)
+2020-07-02 19:01:04.723  INFO 20812 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types],methods=[POST]}" onto public java.lang.String com.lrm.web.admin.TypeController.post(com.lrm.po.Type,org.springframework.validation.BindingResult,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2020-07-02 19:01:04.723  INFO 20812 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types/{id}],methods=[POST]}" onto public java.lang.String com.lrm.web.admin.TypeController.editPost(com.lrm.po.Type,org.springframework.validation.BindingResult,java.lang.Long,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2020-07-02 19:01:04.724  INFO 20812 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types/{id}/input],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.TypeController.editInput(java.lang.Long,org.springframework.ui.Model)
+2020-07-02 19:01:04.726  INFO 20812 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/archives],methods=[GET]}" onto public java.lang.String com.lrm.web.ArchiveShowController.archives(org.springframework.ui.Model)
+2020-07-02 19:01:04.728  INFO 20812 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/comments/{blogId}],methods=[GET]}" onto public java.lang.String com.lrm.web.CommentController.comments(java.lang.Long,org.springframework.ui.Model)
+2020-07-02 19:01:04.728  INFO 20812 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/comments],methods=[POST]}" onto public java.lang.String com.lrm.web.CommentController.post(com.lrm.po.Comment,javax.servlet.http.HttpSession)
+2020-07-02 19:01:04.729  INFO 20812 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/],methods=[GET]}" onto public java.lang.String com.lrm.web.IndexController.index(org.springframework.data.domain.Pageable,org.springframework.ui.Model)
+2020-07-02 19:01:04.729  INFO 20812 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/search],methods=[POST]}" onto public java.lang.String com.lrm.web.IndexController.search(org.springframework.data.domain.Pageable,java.lang.String,org.springframework.ui.Model)
+2020-07-02 19:01:04.729  INFO 20812 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/blog/{id}],methods=[GET]}" onto public java.lang.String com.lrm.web.IndexController.blog(java.lang.Long,org.springframework.ui.Model)
+2020-07-02 19:01:04.730  INFO 20812 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/footer/newblog],methods=[GET]}" onto public java.lang.String com.lrm.web.IndexController.newblogs(org.springframework.ui.Model)
+2020-07-02 19:01:04.730  INFO 20812 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/tags/{id}],methods=[GET]}" onto public java.lang.String com.lrm.web.TagShowController.tags(org.springframework.data.domain.Pageable,java.lang.Long,org.springframework.ui.Model)
+2020-07-02 19:01:04.730  INFO 20812 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/types/{id}],methods=[GET]}" onto public java.lang.String com.lrm.web.TypeShowController.types(org.springframework.data.domain.Pageable,java.lang.Long,org.springframework.ui.Model)
+2020-07-02 19:01:04.732  INFO 20812 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-07-02 19:01:04.732  INFO 20812 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-07-02 19:01:04.790  INFO 20812 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-07-02 19:01:04.791  INFO 20812 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-07-02 19:01:04.813  INFO 20812 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in controllerExceptionHandler
+2020-07-02 19:01:04.835  INFO 20812 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-07-02 19:01:05.762  INFO 20812 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-02 19:01:05.809  INFO 20812 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2020-07-02 19:01:05.871  INFO 20812 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8070 (http)
+2020-07-02 19:01:05.883  INFO 20812 --- [restartedMain] com.lrm.BlogApplication                  : Started BlogApplication in 9.825 seconds (JVM running for 15.588)
+2020-07-02 19:01:28.001  INFO 20812 --- [http-nio-8070-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-07-02 19:01:28.001  INFO 20812 --- [http-nio-8070-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2020-07-02 19:01:28.036  INFO 20812 --- [http-nio-8070-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 35 ms
+2020-07-02 19:01:28.076  INFO 20812 --- [http-nio-8070-exec-1] com.lrm.aspect.LogAspect                 : Request : {url='http://127.0.0.1:8070/blog/3', ip='127.0.0.1', classMethod='com.lrm.web.IndexController.blog', args=[3, {}]}
+2020-07-02 19:01:28.342  INFO 20812 --- [http-nio-8070-exec-1] com.lrm.aspect.LogAspect                 : Result : blog
+2020-07-02 19:01:29.243  INFO 20812 --- [http-nio-8070-exec-1] com.lrm.aspect.LogAspect                 : Request : {url='http://127.0.0.1:8070/footer/newblog', ip='127.0.0.1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2020-07-02 19:01:29.260  INFO 20812 --- [http-nio-8070-exec-1] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2020-07-02 19:03:15.635  INFO 20812 --- [http-nio-8070-exec-5] com.lrm.aspect.LogAspect                 : Request : {url='http://127.0.0.1:8070/blog/3', ip='127.0.0.1', classMethod='com.lrm.web.IndexController.blog', args=[3, {}]}
+2020-07-02 19:03:15.699  INFO 20812 --- [http-nio-8070-exec-5] com.lrm.aspect.LogAspect                 : Result : blog
+2020-07-02 19:03:16.203  INFO 20812 --- [http-nio-8070-exec-1] com.lrm.aspect.LogAspect                 : Request : {url='http://127.0.0.1:8070/footer/newblog', ip='127.0.0.1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2020-07-02 19:03:16.207  INFO 20812 --- [http-nio-8070-exec-1] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2020-07-02 19:03:28.656  INFO 20812 --- [http-nio-8070-exec-4] com.lrm.aspect.LogAspect                 : Request : {url='http://127.0.0.1:8070/', ip='127.0.0.1', classMethod='com.lrm.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-07-02 19:03:28.683  WARN 20812 --- [http-nio-8070-exec-4] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [null.size]; use collection function syntax instead [size(null)].
+2020-07-02 19:03:28.691  WARN 20812 --- [http-nio-8070-exec-4] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [null.size]; use collection function syntax instead [size(null)].
+2020-07-02 19:03:28.694  INFO 20812 --- [http-nio-8070-exec-4] com.lrm.aspect.LogAspect                 : Result : index
+2020-07-02 19:03:29.096  INFO 20812 --- [http-nio-8070-exec-6] com.lrm.aspect.LogAspect                 : Request : {url='http://127.0.0.1:8070/footer/newblog', ip='127.0.0.1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2020-07-02 19:03:29.101  INFO 20812 --- [http-nio-8070-exec-6] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2020-07-02 19:05:08.387  INFO 20812 --- [http-nio-8070-exec-1] com.lrm.aspect.LogAspect                 : Request : {url='http://127.0.0.1:8070/', ip='127.0.0.1', classMethod='com.lrm.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-07-02 19:05:08.399  INFO 20812 --- [http-nio-8070-exec-1] com.lrm.aspect.LogAspect                 : Result : index
+2020-07-02 19:05:08.782  INFO 20812 --- [http-nio-8070-exec-5] com.lrm.aspect.LogAspect                 : Request : {url='http://127.0.0.1:8070/footer/newblog', ip='127.0.0.1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2020-07-02 19:05:08.785  INFO 20812 --- [http-nio-8070-exec-5] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2020-07-02 19:05:09.013  INFO 20812 --- [http-nio-8070-exec-2] com.lrm.aspect.LogAspect                 : Request : {url='http://127.0.0.1:8070/about', ip='127.0.0.1', classMethod='com.lrm.web.AboutShowController.about', args=[]}
+2020-07-02 19:05:09.017  INFO 20812 --- [http-nio-8070-exec-2] com.lrm.aspect.LogAspect                 : Result : about
+2020-07-02 19:05:09.829  INFO 20812 --- [http-nio-8070-exec-1] com.lrm.aspect.LogAspect                 : Request : {url='http://127.0.0.1:8070/footer/newblog', ip='127.0.0.1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2020-07-02 19:05:09.836  INFO 20812 --- [http-nio-8070-exec-1] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2020-07-02 19:06:22.842  INFO 20812 --- [http-nio-8070-exec-7] com.lrm.aspect.LogAspect                 : Request : {url='http://127.0.0.1:8070/about', ip='127.0.0.1', classMethod='com.lrm.web.AboutShowController.about', args=[]}
+2020-07-02 19:06:22.842  INFO 20812 --- [http-nio-8070-exec-7] com.lrm.aspect.LogAspect                 : Result : about
+2020-07-02 19:06:23.283  INFO 20812 --- [http-nio-8070-exec-4] com.lrm.aspect.LogAspect                 : Request : {url='http://127.0.0.1:8070/footer/newblog', ip='127.0.0.1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2020-07-02 19:06:23.290  INFO 20812 --- [http-nio-8070-exec-4] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2020-07-02 19:07:17.386  INFO 20812 --- [http-nio-8070-exec-10] com.lrm.aspect.LogAspect                 : Request : {url='http://127.0.0.1:8070/', ip='127.0.0.1', classMethod='com.lrm.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-07-02 19:07:17.399  INFO 20812 --- [http-nio-8070-exec-10] com.lrm.aspect.LogAspect                 : Result : index
+2020-07-02 19:07:17.899  INFO 20812 --- [http-nio-8070-exec-6] com.lrm.aspect.LogAspect                 : Request : {url='http://127.0.0.1:8070/footer/newblog', ip='127.0.0.1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2020-07-02 19:07:17.903  INFO 20812 --- [http-nio-8070-exec-6] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2020-07-02 19:07:19.430  INFO 20812 --- [http-nio-8070-exec-7] com.lrm.aspect.LogAspect                 : Request : {url='http://127.0.0.1:8070/blog/3', ip='127.0.0.1', classMethod='com.lrm.web.IndexController.blog', args=[3, {}]}
+2020-07-02 19:07:19.478  INFO 20812 --- [http-nio-8070-exec-7] com.lrm.aspect.LogAspect                 : Result : blog
+2020-07-02 19:07:19.946  INFO 20812 --- [http-nio-8070-exec-9] com.lrm.aspect.LogAspect                 : Request : {url='http://127.0.0.1:8070/footer/newblog', ip='127.0.0.1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2020-07-02 19:07:19.950  INFO 20812 --- [http-nio-8070-exec-9] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2020-07-02 19:08:49.160  INFO 20812 --- [http-nio-8070-exec-6] com.lrm.aspect.LogAspect                 : Request : {url='http://127.0.0.1:8070/blog/3', ip='127.0.0.1', classMethod='com.lrm.web.IndexController.blog', args=[3, {}]}
+2020-07-02 19:08:49.210  INFO 20812 --- [http-nio-8070-exec-6] com.lrm.aspect.LogAspect                 : Result : blog
+2020-07-02 19:08:49.710  INFO 20812 --- [http-nio-8070-exec-10] com.lrm.aspect.LogAspect                 : Request : {url='http://127.0.0.1:8070/footer/newblog', ip='127.0.0.1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2020-07-02 19:08:49.715  INFO 20812 --- [http-nio-8070-exec-10] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2020-07-02 19:09:40.890  INFO 18768 --- [restartedMain] com.lrm.BlogApplication                  : Starting BlogApplication on suruomo with PID 18768 (D:\Java\Project\blog\target\classes started by 苏若墨 in D:\Java\Project\blog)
+2020-07-02 19:09:40.891 DEBUG 18768 --- [restartedMain] com.lrm.BlogApplication                  : Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+2020-07-02 19:09:40.891  INFO 18768 --- [restartedMain] com.lrm.BlogApplication                  : The following profiles are active: dev
+2020-07-02 19:09:41.077  INFO 18768 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e7c30a6: startup date [Thu Jul 02 19:09:41 CST 2020]; root of context hierarchy
+2020-07-02 19:09:42.894  INFO 18768 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8070 (http)
+2020-07-02 19:09:42.901  INFO 18768 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-02 19:09:42.902  INFO 18768 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2020-07-02 19:09:43.047  INFO 18768 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-02 19:09:43.048  INFO 18768 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1970 ms
+2020-07-02 19:09:43.218  INFO 18768 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2020-07-02 19:09:43.221  INFO 18768 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-07-02 19:09:43.222  INFO 18768 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-07-02 19:09:43.222  INFO 18768 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-07-02 19:09:43.222  INFO 18768 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2020-07-02 19:09:43.870  INFO 18768 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-07-02 19:09:43.882  INFO 18768 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-07-02 19:09:44.019  INFO 18768 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2020-07-02 19:09:44.021  INFO 18768 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-07-02 19:09:44.022  INFO 18768 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2020-07-02 19:09:44.057  INFO 18768 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2020-07-02 19:09:44.227  INFO 18768 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-07-02 19:09:44.636  INFO 18768 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2020-07-02 19:09:44.840  INFO 18768 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-07-02 19:09:45.088  INFO 18768 --- [restartedMain] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2020-07-02 19:09:45.734  INFO 18768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e7c30a6: startup date [Thu Jul 02 19:09:41 CST 2020]; root of context hierarchy
+2020-07-02 19:09:45.788  INFO 18768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/about],methods=[GET]}" onto public java.lang.String com.lrm.web.AboutShowController.about()
+2020-07-02 19:09:45.792  INFO 18768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs/{id}/delete],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.BlogController.delete(java.lang.Long,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2020-07-02 19:09:45.793  INFO 18768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs/search],methods=[POST]}" onto public java.lang.String com.lrm.web.admin.BlogController.search(org.springframework.data.domain.Pageable,com.lrm.vo.BlogQuery,org.springframework.ui.Model)
+2020-07-02 19:09:45.793  INFO 18768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs/input],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.BlogController.input(org.springframework.ui.Model)
+2020-07-02 19:09:45.793  INFO 18768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs],methods=[POST]}" onto public java.lang.String com.lrm.web.admin.BlogController.post(com.lrm.po.Blog,org.springframework.web.servlet.mvc.support.RedirectAttributes,javax.servlet.http.HttpSession)
+2020-07-02 19:09:45.793  INFO 18768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.BlogController.blogs(org.springframework.data.domain.Pageable,com.lrm.vo.BlogQuery,org.springframework.ui.Model)
+2020-07-02 19:09:45.793  INFO 18768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs/{id}/input],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.BlogController.editInput(java.lang.Long,org.springframework.ui.Model)
+2020-07-02 19:09:45.794  INFO 18768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/login],methods=[POST]}" onto public java.lang.String com.lrm.web.admin.LoginController.login(java.lang.String,java.lang.String,javax.servlet.http.HttpSession,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2020-07-02 19:09:45.795  INFO 18768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.LoginController.loginPage()
+2020-07-02 19:09:45.795  INFO 18768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/logout],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.LoginController.logout(javax.servlet.http.HttpSession)
+2020-07-02 19:09:45.796  INFO 18768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tags/{id}/delete],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.TagController.delete(java.lang.Long,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2020-07-02 19:09:45.796  INFO 18768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tags/input],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.TagController.input(org.springframework.ui.Model)
+2020-07-02 19:09:45.796  INFO 18768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tags],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.TagController.tags(org.springframework.data.domain.Pageable,org.springframework.ui.Model)
+2020-07-02 19:09:45.797  INFO 18768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tags],methods=[POST]}" onto public java.lang.String com.lrm.web.admin.TagController.post(com.lrm.po.Tag,org.springframework.validation.BindingResult,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2020-07-02 19:09:45.797  INFO 18768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tags/{id}],methods=[POST]}" onto public java.lang.String com.lrm.web.admin.TagController.editPost(com.lrm.po.Tag,org.springframework.validation.BindingResult,java.lang.Long,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2020-07-02 19:09:45.797  INFO 18768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tags/{id}/input],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.TagController.editInput(java.lang.Long,org.springframework.ui.Model)
+2020-07-02 19:09:45.799  INFO 18768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types/{id}/delete],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.TypeController.delete(java.lang.Long,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2020-07-02 19:09:45.800  INFO 18768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.TypeController.types(org.springframework.data.domain.Pageable,org.springframework.ui.Model)
+2020-07-02 19:09:45.800  INFO 18768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types/input],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.TypeController.input(org.springframework.ui.Model)
+2020-07-02 19:09:45.800  INFO 18768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types],methods=[POST]}" onto public java.lang.String com.lrm.web.admin.TypeController.post(com.lrm.po.Type,org.springframework.validation.BindingResult,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2020-07-02 19:09:45.800  INFO 18768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types/{id}],methods=[POST]}" onto public java.lang.String com.lrm.web.admin.TypeController.editPost(com.lrm.po.Type,org.springframework.validation.BindingResult,java.lang.Long,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2020-07-02 19:09:45.800  INFO 18768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types/{id}/input],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.TypeController.editInput(java.lang.Long,org.springframework.ui.Model)
+2020-07-02 19:09:45.802  INFO 18768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/archives],methods=[GET]}" onto public java.lang.String com.lrm.web.ArchiveShowController.archives(org.springframework.ui.Model)
+2020-07-02 19:09:45.803  INFO 18768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/comments/{blogId}],methods=[GET]}" onto public java.lang.String com.lrm.web.CommentController.comments(java.lang.Long,org.springframework.ui.Model)
+2020-07-02 19:09:45.803  INFO 18768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/comments],methods=[POST]}" onto public java.lang.String com.lrm.web.CommentController.post(com.lrm.po.Comment,javax.servlet.http.HttpSession)
+2020-07-02 19:09:45.804  INFO 18768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/],methods=[GET]}" onto public java.lang.String com.lrm.web.IndexController.index(org.springframework.data.domain.Pageable,org.springframework.ui.Model)
+2020-07-02 19:09:45.804  INFO 18768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/search],methods=[POST]}" onto public java.lang.String com.lrm.web.IndexController.search(org.springframework.data.domain.Pageable,java.lang.String,org.springframework.ui.Model)
+2020-07-02 19:09:45.804  INFO 18768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/blog/{id}],methods=[GET]}" onto public java.lang.String com.lrm.web.IndexController.blog(java.lang.Long,org.springframework.ui.Model)
+2020-07-02 19:09:45.804  INFO 18768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/footer/newblog],methods=[GET]}" onto public java.lang.String com.lrm.web.IndexController.newblogs(org.springframework.ui.Model)
+2020-07-02 19:09:45.804  INFO 18768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/tags/{id}],methods=[GET]}" onto public java.lang.String com.lrm.web.TagShowController.tags(org.springframework.data.domain.Pageable,java.lang.Long,org.springframework.ui.Model)
+2020-07-02 19:09:45.805  INFO 18768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/types/{id}],methods=[GET]}" onto public java.lang.String com.lrm.web.TypeShowController.types(org.springframework.data.domain.Pageable,java.lang.Long,org.springframework.ui.Model)
+2020-07-02 19:09:45.806  INFO 18768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-07-02 19:09:45.806  INFO 18768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-07-02 19:09:45.842  INFO 18768 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-07-02 19:09:45.842  INFO 18768 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-07-02 19:09:45.857  INFO 18768 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in controllerExceptionHandler
+2020-07-02 19:09:45.877  INFO 18768 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-07-02 19:09:46.450  INFO 18768 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-02 19:09:46.494  INFO 18768 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2020-07-02 19:09:46.536  INFO 18768 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8070 (http)
+2020-07-02 19:09:46.540  INFO 18768 --- [restartedMain] com.lrm.BlogApplication                  : Started BlogApplication in 6.023 seconds (JVM running for 7.924)
+2020-07-02 19:31:04.301  INFO 18768 --- [http-nio-8070-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-07-02 19:31:04.301  INFO 18768 --- [http-nio-8070-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2020-07-02 19:31:04.324  INFO 18768 --- [http-nio-8070-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 22 ms
+2020-07-02 19:31:04.350  INFO 18768 --- [http-nio-8070-exec-1] com.lrm.aspect.LogAspect                 : Request : {url='http://127.0.0.1:8070/', ip='127.0.0.1', classMethod='com.lrm.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-07-02 19:31:04.457  WARN 18768 --- [http-nio-8070-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [null.size]; use collection function syntax instead [size(null)].
+2020-07-02 19:31:04.466  WARN 18768 --- [http-nio-8070-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [null.size]; use collection function syntax instead [size(null)].
+2020-07-02 19:31:04.472  INFO 18768 --- [http-nio-8070-exec-1] com.lrm.aspect.LogAspect                 : Result : index
+2020-07-02 19:31:05.689  INFO 18768 --- [http-nio-8070-exec-4] com.lrm.aspect.LogAspect                 : Request : {url='http://127.0.0.1:8070/footer/newblog', ip='127.0.0.1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2020-07-02 19:31:05.700  INFO 18768 --- [http-nio-8070-exec-4] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2020-07-02 19:31:15.862  INFO 18768 --- [http-nio-8070-exec-10] com.lrm.aspect.LogAspect                 : Request : {url='http://127.0.0.1:8070/blog/3', ip='127.0.0.1', classMethod='com.lrm.web.IndexController.blog', args=[3, {}]}
+2020-07-02 19:31:17.095  INFO 18768 --- [http-nio-8070-exec-10] com.lrm.aspect.LogAspect                 : Result : blog
+2020-07-02 19:31:17.849  INFO 18768 --- [http-nio-8070-exec-6] com.lrm.aspect.LogAspect                 : Request : {url='http://127.0.0.1:8070/footer/newblog', ip='127.0.0.1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2020-07-02 19:31:17.853  INFO 18768 --- [http-nio-8070-exec-6] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2020-07-02 19:31:53.052  INFO 18768 --- [http-nio-8070-exec-8] com.lrm.aspect.LogAspect                 : Request : {url='http://127.0.0.1:8070/', ip='127.0.0.1', classMethod='com.lrm.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-07-02 19:31:53.072  INFO 18768 --- [http-nio-8070-exec-8] com.lrm.aspect.LogAspect                 : Result : index
+2020-07-02 19:31:53.613  INFO 18768 --- [http-nio-8070-exec-1] com.lrm.aspect.LogAspect                 : Request : {url='http://127.0.0.1:8070/footer/newblog', ip='127.0.0.1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2020-07-02 19:31:53.621  INFO 18768 --- [http-nio-8070-exec-1] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2020-07-02 19:32:05.773  INFO 18768 --- [http-nio-8070-exec-3] com.lrm.aspect.LogAspect                 : Request : {url='http://127.0.0.1:8070/', ip='127.0.0.1', classMethod='com.lrm.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-07-02 19:32:05.773  INFO 18768 --- [http-nio-8070-exec-5] com.lrm.aspect.LogAspect                 : Request : {url='http://127.0.0.1:8070/blog/3', ip='127.0.0.1', classMethod='com.lrm.web.IndexController.blog', args=[3, {}]}
+2020-07-02 19:32:05.791  INFO 18768 --- [http-nio-8070-exec-3] com.lrm.aspect.LogAspect                 : Result : index
+2020-07-02 19:32:05.947  INFO 18768 --- [http-nio-8070-exec-5] com.lrm.aspect.LogAspect                 : Result : blog
+2020-07-02 19:32:06.553  INFO 18768 --- [http-nio-8070-exec-10] com.lrm.aspect.LogAspect                 : Request : {url='http://127.0.0.1:8070/footer/newblog', ip='127.0.0.1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2020-07-02 19:32:06.559  INFO 18768 --- [http-nio-8070-exec-10] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2020-07-02 19:32:07.171  INFO 18768 --- [http-nio-8070-exec-2] com.lrm.aspect.LogAspect                 : Request : {url='http://127.0.0.1:8070/footer/newblog', ip='127.0.0.1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2020-07-02 19:32:07.176  INFO 18768 --- [http-nio-8070-exec-2] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2020-07-02 19:32:14.372  INFO 18768 --- [http-nio-8070-exec-5] com.lrm.aspect.LogAspect                 : Request : {url='http://127.0.0.1:8070/', ip='127.0.0.1', classMethod='com.lrm.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-07-02 19:32:14.382  INFO 18768 --- [http-nio-8070-exec-5] com.lrm.aspect.LogAspect                 : Result : index
+2020-07-02 19:32:14.891  INFO 18768 --- [http-nio-8070-exec-2] com.lrm.aspect.LogAspect                 : Request : {url='http://127.0.0.1:8070/footer/newblog', ip='127.0.0.1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2020-07-02 19:32:14.895  INFO 18768 --- [http-nio-8070-exec-2] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2020-07-02 19:32:35.135  INFO 18768 --- [http-nio-8070-exec-2] com.lrm.aspect.LogAspect                 : Request : {url='http://127.0.0.1:8070/', ip='127.0.0.1', classMethod='com.lrm.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-07-02 19:32:35.135  INFO 18768 --- [http-nio-8070-exec-4] com.lrm.aspect.LogAspect                 : Request : {url='http://127.0.0.1:8070/blog/3', ip='127.0.0.1', classMethod='com.lrm.web.IndexController.blog', args=[3, {}]}
+2020-07-02 19:32:35.145  INFO 18768 --- [http-nio-8070-exec-2] com.lrm.aspect.LogAspect                 : Result : index
+2020-07-02 19:32:35.196  INFO 18768 --- [http-nio-8070-exec-4] com.lrm.aspect.LogAspect                 : Result : blog
+2020-07-02 19:32:35.829  INFO 18768 --- [http-nio-8070-exec-1] com.lrm.aspect.LogAspect                 : Request : {url='http://127.0.0.1:8070/footer/newblog', ip='127.0.0.1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2020-07-02 19:32:35.833  INFO 18768 --- [http-nio-8070-exec-1] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2020-07-02 19:32:36.297  INFO 18768 --- [http-nio-8070-exec-10] com.lrm.aspect.LogAspect                 : Request : {url='http://127.0.0.1:8070/footer/newblog', ip='127.0.0.1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2020-07-02 19:32:36.302  INFO 18768 --- [http-nio-8070-exec-10] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2020-07-02 19:32:43.972  INFO 18768 --- [http-nio-8070-exec-1] com.lrm.aspect.LogAspect                 : Request : {url='http://127.0.0.1:8070/blog/3', ip='127.0.0.1', classMethod='com.lrm.web.IndexController.blog', args=[3, {}]}
+2020-07-02 19:32:44.022  INFO 18768 --- [http-nio-8070-exec-1] com.lrm.aspect.LogAspect                 : Result : blog
+2020-07-02 19:32:44.438  INFO 18768 --- [http-nio-8070-exec-8] com.lrm.aspect.LogAspect                 : Request : {url='http://127.0.0.1:8070/footer/newblog', ip='127.0.0.1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2020-07-02 19:32:44.441  INFO 18768 --- [http-nio-8070-exec-8] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2020-07-02 19:37:13.990  INFO 18768 --- [http-nio-8070-exec-4] com.lrm.aspect.LogAspect                 : Request : {url='http://127.0.0.1:8070/', ip='127.0.0.1', classMethod='com.lrm.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-07-02 19:37:13.990  INFO 18768 --- [http-nio-8070-exec-1] com.lrm.aspect.LogAspect                 : Request : {url='http://127.0.0.1:8070/blog/3', ip='127.0.0.1', classMethod='com.lrm.web.IndexController.blog', args=[3, {}]}
+2020-07-02 19:37:14.031  INFO 18768 --- [http-nio-8070-exec-4] com.lrm.aspect.LogAspect                 : Result : index
+2020-07-02 19:37:14.075  INFO 18768 --- [http-nio-8070-exec-1] com.lrm.aspect.LogAspect                 : Result : blog
+2020-07-02 19:37:14.841  INFO 18768 --- [http-nio-8070-exec-1] com.lrm.aspect.LogAspect                 : Request : {url='http://127.0.0.1:8070/footer/newblog', ip='127.0.0.1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2020-07-02 19:37:14.846  INFO 18768 --- [http-nio-8070-exec-1] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2020-07-02 19:37:15.724  INFO 18768 --- [http-nio-8070-exec-10] com.lrm.aspect.LogAspect                 : Request : {url='http://127.0.0.1:8070/footer/newblog', ip='127.0.0.1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2020-07-02 19:37:15.728  INFO 18768 --- [http-nio-8070-exec-10] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2020-07-02 19:37:31.255  INFO 18768 --- [http-nio-8070-exec-5] com.lrm.aspect.LogAspect                 : Request : {url='http://127.0.0.1:8070/', ip='127.0.0.1', classMethod='com.lrm.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-07-02 19:37:31.256  INFO 18768 --- [http-nio-8070-exec-8] com.lrm.aspect.LogAspect                 : Request : {url='http://127.0.0.1:8070/blog/3', ip='127.0.0.1', classMethod='com.lrm.web.IndexController.blog', args=[3, {}]}
+2020-07-02 19:37:31.266  INFO 18768 --- [http-nio-8070-exec-5] com.lrm.aspect.LogAspect                 : Result : index
+2020-07-02 19:37:31.301  INFO 18768 --- [http-nio-8070-exec-8] com.lrm.aspect.LogAspect                 : Result : blog
+2020-07-02 19:37:32.598  INFO 18768 --- [http-nio-8070-exec-8] com.lrm.aspect.LogAspect                 : Request : {url='http://127.0.0.1:8070/footer/newblog', ip='127.0.0.1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2020-07-02 19:37:32.606  INFO 18768 --- [http-nio-8070-exec-8] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2020-07-02 19:37:33.217  INFO 18768 --- [http-nio-8070-exec-3] com.lrm.aspect.LogAspect                 : Request : {url='http://127.0.0.1:8070/footer/newblog', ip='127.0.0.1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2020-07-02 19:37:33.224  INFO 18768 --- [http-nio-8070-exec-3] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2020-07-02 19:39:00.898  INFO 18768 --- [http-nio-8070-exec-7] com.lrm.aspect.LogAspect                 : Request : {url='http://127.0.0.1:8070/types/1', ip='127.0.0.1', classMethod='com.lrm.web.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], 1, {}]}
+2020-07-02 19:39:00.912  INFO 18768 --- [http-nio-8070-exec-7] com.lrm.aspect.LogAspect                 : Result : types
+2020-07-02 19:39:01.419  INFO 18768 --- [http-nio-8070-exec-4] com.lrm.aspect.LogAspect                 : Request : {url='http://127.0.0.1:8070/footer/newblog', ip='127.0.0.1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2020-07-02 19:39:01.421  INFO 18768 --- [http-nio-8070-exec-4] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2020-07-02 19:39:07.830  INFO 18768 --- [http-nio-8070-exec-2] com.lrm.aspect.LogAspect                 : Request : {url='http://127.0.0.1:8070/types/3', ip='127.0.0.1', classMethod='com.lrm.web.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], 3, {}]}
+2020-07-02 19:39:07.837  INFO 18768 --- [http-nio-8070-exec-2] com.lrm.aspect.LogAspect                 : Result : types
+2020-07-02 19:39:08.260  INFO 18768 --- [http-nio-8070-exec-8] com.lrm.aspect.LogAspect                 : Request : {url='http://127.0.0.1:8070/footer/newblog', ip='127.0.0.1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2020-07-02 19:39:08.262  INFO 18768 --- [http-nio-8070-exec-8] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2020-07-02 19:39:09.496  INFO 18768 --- [http-nio-8070-exec-1] com.lrm.aspect.LogAspect                 : Request : {url='http://127.0.0.1:8070/types/2', ip='127.0.0.1', classMethod='com.lrm.web.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], 2, {}]}
+2020-07-02 19:39:09.504  INFO 18768 --- [http-nio-8070-exec-1] com.lrm.aspect.LogAspect                 : Result : types
+2020-07-02 19:39:09.925  INFO 18768 --- [http-nio-8070-exec-7] com.lrm.aspect.LogAspect                 : Request : {url='http://127.0.0.1:8070/footer/newblog', ip='127.0.0.1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2020-07-02 19:39:09.928  INFO 18768 --- [http-nio-8070-exec-7] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2020-07-02 19:39:14.073  INFO 18768 --- [http-nio-8070-exec-10] com.lrm.aspect.LogAspect                 : Request : {url='http://127.0.0.1:8070/tags/-1', ip='127.0.0.1', classMethod='com.lrm.web.TagShowController.tags', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2020-07-02 19:39:14.106  INFO 18768 --- [http-nio-8070-exec-10] com.lrm.aspect.LogAspect                 : Result : tags
+2020-07-02 19:39:14.521  INFO 18768 --- [http-nio-8070-exec-2] com.lrm.aspect.LogAspect                 : Request : {url='http://127.0.0.1:8070/footer/newblog', ip='127.0.0.1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2020-07-02 19:39:14.525  INFO 18768 --- [http-nio-8070-exec-2] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2020-07-02 19:39:24.123  INFO 18768 --- [http-nio-8070-exec-9] com.lrm.aspect.LogAspect                 : Request : {url='http://127.0.0.1:8070/', ip='127.0.0.1', classMethod='com.lrm.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-07-02 19:39:24.132  INFO 18768 --- [http-nio-8070-exec-9] com.lrm.aspect.LogAspect                 : Result : index
+2020-07-02 19:39:24.659  INFO 18768 --- [http-nio-8070-exec-4] com.lrm.aspect.LogAspect                 : Request : {url='http://127.0.0.1:8070/footer/newblog', ip='127.0.0.1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2020-07-02 19:39:24.662  INFO 18768 --- [http-nio-8070-exec-4] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2020-07-02 19:40:40.336  INFO 18768 --- [http-nio-8070-exec-1] com.lrm.aspect.LogAspect                 : Request : {url='http://127.0.0.1:8070/', ip='127.0.0.1', classMethod='com.lrm.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-07-02 19:40:40.338  INFO 18768 --- [http-nio-8070-exec-8] com.lrm.aspect.LogAspect                 : Request : {url='http://127.0.0.1:8070/blog/3', ip='127.0.0.1', classMethod='com.lrm.web.IndexController.blog', args=[3, {}]}
+2020-07-02 19:40:40.349  INFO 18768 --- [http-nio-8070-exec-1] com.lrm.aspect.LogAspect                 : Result : index
+2020-07-02 19:40:40.381  INFO 18768 --- [http-nio-8070-exec-8] com.lrm.aspect.LogAspect                 : Result : blog
+2020-07-02 19:40:41.331  INFO 18768 --- [http-nio-8070-exec-4] com.lrm.aspect.LogAspect                 : Request : {url='http://127.0.0.1:8070/footer/newblog', ip='127.0.0.1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2020-07-02 19:40:41.334  INFO 18768 --- [http-nio-8070-exec-4] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2020-07-02 19:40:41.695  INFO 18768 --- [http-nio-8070-exec-10] com.lrm.aspect.LogAspect                 : Request : {url='http://127.0.0.1:8070/footer/newblog', ip='127.0.0.1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2020-07-02 19:40:41.697  INFO 18768 --- [http-nio-8070-exec-10] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2020-07-02 19:41:06.995  INFO 18768 --- [http-nio-8070-exec-5] com.lrm.aspect.LogAspect                 : Request : {url='http://127.0.0.1:8070/', ip='127.0.0.1', classMethod='com.lrm.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-07-02 19:41:07.011  INFO 18768 --- [http-nio-8070-exec-5] com.lrm.aspect.LogAspect                 : Result : index
+2020-07-02 19:41:07.478  INFO 18768 --- [http-nio-8070-exec-9] com.lrm.aspect.LogAspect                 : Request : {url='http://127.0.0.1:8070/footer/newblog', ip='127.0.0.1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2020-07-02 19:41:07.486  INFO 18768 --- [http-nio-8070-exec-9] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
